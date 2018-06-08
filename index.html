@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <!-- 说明：
+    width - viewport的宽度
+    height – viewport的高度
+    initial-scale - 初始的缩放比例
+    minimum-scale - 允许用户缩放到的最小比例
+    maximum-scale – 允许用户缩放到的最大比例
+    user-scalable – 用户是否可以手动缩放 -->
+
+    <!-- 设置作者姓名及联系方式 -->
+    <meta name="author" contect="panhuajian, 18715116489@163.com" />
+    <!-- 设置竖屏 -->
+    <meta name="screen-orientation" content="portrait"/>
+    <!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 忽略页面中的数字识别为电话-->
+    <meta name="format-detection" content="telephone=no">
+    <!-- 设置竖屏 -->
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>juran</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript">
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=360){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 360) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+  </body>
+</html>
