@@ -3,7 +3,7 @@
     <div class="project_search" @click="search">
       <div class="search_cont">
         <i class="iconfont icon-sousuo"></i>
-        王海亮
+        搜索
       </div>
     </div>
     <widget-footer :select="'index'"></widget-footer>

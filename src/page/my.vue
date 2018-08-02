@@ -1,6 +1,6 @@
 <template>
     <div class="index">
-        我是我的页
+        王海亮
         <widget-footer :select="'my'"></widget-footer>
     </div>
 </template>
