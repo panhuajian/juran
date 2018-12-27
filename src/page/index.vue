@@ -17,7 +17,6 @@ export default {
   components: {WidgetFooter},
   data () {
     return {
-
     }
   },
   methods: {

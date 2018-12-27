@@ -9,7 +9,10 @@
 import WidgetFooter from '@/components/footer/widgetFooter.vue'
 export default {
   name: 'my',
-  components: {WidgetFooter}
+  components: {WidgetFooter},
+  mounted () {
+    console.log('我是my页面')
+  }
 }
 </script>
 
